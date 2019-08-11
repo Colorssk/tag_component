@@ -1,5 +1,5 @@
 <template>
-    <div class='input-tags--container'>
+    <div  id="app" class='input-tags--container'>
         <h1>布局1aaa</h1>
         <input-tags v-model="tags">
             <div slot-scope="{tags,inputEvents,inputAttrs,removeTag,addTag}" class="input-tags-wrap">
@@ -37,14 +37,14 @@
 import inputTags from '../components/input-tags'
 
 export default {
-	data() {
-		return {
-			tags: ['test1', 'test2'],
-		}
-	},
-	components: {
-		'input-tags': inputTags,
-	},
+  data () {
+    return {
+      tags: ['test1', 'test2']
+    }
+  },
+  components: {
+    'input-tags': inputTags
+  }
 }
 </script>
 
